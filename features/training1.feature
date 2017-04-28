@@ -11,11 +11,11 @@ Feature: This is first feature
     Then I the <sum> is correct
 
     Examples:
-      | a1 | b1 | sum|
-      | 3  | 5  | 8  |
-      | 13 | 15 | 28 |
-      | 136|256 |392 |
-      | 23 | 54 |77  |
+      | a1 | b1 | sum |
+      | 3  | 5  | 8   |
+      | 13 | 15 | 28  |
+      | 136| 256| 392 |
+      | 23 | 54 | 77  |
 
   Scenario Outline: Addition of two numbers
     Given I have calculator ruby class
@@ -35,9 +35,9 @@ Feature: This is first feature
     Then I the try has <status>
 
     Examples:
-    |login| password| status|
-    |    a| b       | succes|
-    |   b | a       |failed |
+    |login| password| status |
+    |   a | b       | success|
+    |   b | a       | failed |
 
 
     Scenario: I have photo gallery
