@@ -10,5 +10,5 @@ Then(/^Everything is good$/) do
   @browser.element(css: "div[id='poll-widget'] button").click
 
   sleep 5
-  puts @browser.title
+  puts @browser.titlev
 end
