@@ -11,5 +11,6 @@ class LoginPage
   div(:password_next_button, css: '#passwordNext')
   div(:invalid_email_error, xpath: "//div[text()='Enter a valid email or phone number']")
   div(:empty_password_error, xpath: "//div[id='password']//div[text()='Wrong password. Try again.']")
-
+  element(:enter_city, xpath: "//input[@aria-label='Enter a city']")
+  div(:city_next_button, xpath: "//div[@role='button']")
 end

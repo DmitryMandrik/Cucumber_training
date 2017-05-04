@@ -8,5 +8,7 @@ class InboxPage
   a(:sign_out_button, xpath: "//a[text()='Sign out']")
   div(:compose_button, xpath: "//div[text()='COMPOSE']")
   text_area(:recipient, xpath: "//textarea[@name='to']")
-  (:subject, xpath: "//input[@placeholder='Subject']")
+  element(:subject, xpath: "//input[@aria-label='Subject']")
+  div(:send_button, xpath: "//div[text()='Send']")
+  b(:email_subject_in_list, xpath: "//b[text()='Test Email']")
 end

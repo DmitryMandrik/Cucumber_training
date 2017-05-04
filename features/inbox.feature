@@ -3,7 +3,7 @@ Feature: Login
   I want to login into my google mail account
 
   Background:
-    Given I am on Inbox page
+    Given I am logged in
 
   Scenario: Logout from inbox
     When I click at Google Account menu button

@@ -2,12 +2,6 @@ Given(/^I am on login page$/) do
   visit LoginPage
 end
 
-And(/^I identify Login Page$/) do
-  if on(AnotherLoginPage).email_field_element.exists?
-    @browser.refresh
-  end
-end
-
 When(/^I click on arrow button$/) do
   on(LoginPage) do |login_page|
     login_page.access_to_another_acc_element.click if login_page.access_to_another_acc_element.exists?
